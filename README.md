@@ -1,8 +1,9 @@
-# 📚 GitHub Repository Catalog & Index
+# 📚 GitHub Repository Catalog & Command Deck
 
 > **Curated Account Directory for [@Justinhubbard37](https://github.com/Justinhubbard37)**  
-> 🌐 **[LAUNCH LIVE INTERACTIVE DASHBOARD // HYBRID REAL-TIME SEARCH & TELEMETRY](https://justinhubbard37.github.io/github-repo-catalog)**  
-> *Generated on September 3, 2026 • Total Repositories: **419***
+> 🌐 **[LAUNCH LIVE COMMAND DECK // TACTICAL SEARCH & TELEMETRY](https://justinhubbard37.github.io/github-repo-catalog)**  
+> 📖 **[READ PORTFOLIO FIELD MANUAL & SYSTEM GUIDE ()](./PORTFOLIO_GUIDE.md)** • 📜 **[CHANGELOG](./CHANGELOG.md)**  
+> *Catalog Version: **v4.0.0 (Progressive Command Deck)** • Total Repositories: **419***
 
 ---
 
