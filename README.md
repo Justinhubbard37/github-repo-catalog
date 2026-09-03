@@ -1,6 +1,7 @@
 # 📚 GitHub Repository Catalog & Index
 
 > **Curated Account Directory for [@Justinhubbard37](https://github.com/Justinhubbard37)**  
+> 🌐 **[LAUNCH LIVE INTERACTIVE DASHBOARD // HYBRID REAL-TIME SEARCH & TELEMETRY](https://justinhubbard37.github.io/github-repo-catalog)**  
 > *Generated on September 3, 2026 • Total Repositories: **419***
 
 ---
