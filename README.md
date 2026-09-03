@@ -18,16 +18,18 @@
 ---
 
 ## 🗂️ Quick Navigation
+<a id="quick-navigation"></a>
 
-- [🚀 Original Creations & Source Projects (31)](#-original-creations--source-projects)
-- [🐍 Python Ecosystem Forks & Upstreams](#-python-ecosystem-forks--upstreams)
-- [⚡ TypeScript & JavaScript Repositories](#-typescript--javascript-repositories)
-- [🦀 Systems & Performance (Rust, Go, C++)](#-systems--performance-rust-go-c)
-- [📦 Curated AI Models, Prompts & Other Stacks](#-curated-ai-models-prompts--other-stacks)
-- [📋 Master Repository Table (All 417 Repositories)](#-complete-master-repository-directory)
+- [🚀 Original Creations & Source Projects (31)](#original-creations)
+- [🐍 Python Ecosystem Forks & Upstreams](#python-ecosystem)
+- [⚡ TypeScript & JavaScript Repositories](#typescript-javascript)
+- [🦀 Systems & Performance (Rust, Go, C++)](#systems-performance)
+- [📦 Curated AI Models, Prompts & Other Stacks](#curated-stacks)
+- [📋 Complete Master Repository Directory (417 Repositories)](#master-directory)
 
 ---
 
+<a id="original-creations"></a>
 ## 🚀 Original Creations & Source Projects
 
 Core local-first AI agent harnesses, desktop studio environments, RAG pipelines, and tools created by **Justin Hubbard**.
@@ -158,7 +160,11 @@ Core local-first AI agent harnesses, desktop studio environments, RAG pipelines,
 
 ---
 
+<a id="python-ecosystem"></a>
 ## 🐍 Python Ecosystem Forks & Upstreams
+
+[↑ Back to Navigation](#quick-navigation)
+
 
 Curated Python repositories for machine learning, agent orchestration, data engineering, and automation (*80 repositories*).
 
@@ -247,7 +253,11 @@ Curated Python repositories for machine learning, agent orchestration, data engi
 
 ---
 
+<a id="typescript-javascript"></a>
 ## ⚡ TypeScript & JavaScript Repositories
+
+[↑ Back to Navigation](#quick-navigation)
+
 
 Full-stack web applications, UI libraries, Next.js templates, and agent tools (*72 repositories*).
 
@@ -328,7 +338,11 @@ Full-stack web applications, UI libraries, Next.js templates, and agent tools (*
 
 ---
 
+<a id="systems-performance"></a>
 ## 🦀 Systems & Performance (Rust, Go, C++)
+
+[↑ Back to Navigation](#quick-navigation)
+
 
 High-performance native runtimes, system utilities, kernels, and embedded tools (*35 repositories*).
 
@@ -372,7 +386,11 @@ High-performance native runtimes, system utilities, kernels, and embedded tools 
 
 ---
 
+<a id="curated-stacks"></a>
 ## 📦 Curated AI Models, Prompts & Other Stacks
+
+[↑ Back to Navigation](#quick-navigation)
+
 
 Educational resources, awesome collections, research papers, and multi-language repositories (*199 repositories*).
 
@@ -580,7 +598,11 @@ Educational resources, awesome collections, research papers, and multi-language 
 
 ---
 
+<a id="master-directory"></a>
 ## 📋 Complete Master Repository Directory
+
+[↑ Back to Navigation](#quick-navigation)
+
 
 <details open>
 <summary><b>Click to expand/collapse master directory table (417 repositories)</b></summary>
