@@ -2,56 +2,75 @@
 
 > **Target Account:** `[@Justinhubbard37](https://github.com/Justinhubbard37)`  
 > **Classification:** Sovereign AI Artifact Directory & Repository Vault  
-> **Catalog Version:** `v4.0.0` • **Maintained By:** Justin Hubbard  
+> **Catalog Version:** `v7.0.0` • **Maintained By:** Justin Hubbard  
+> **Total Indexed Repositories:** **419** (398 Public, 21 Private 🔒)  
 > **Live Tactical Web App:** [https://justinhubbard37.github.io/github-repo-catalog](https://justinhubbard37.github.io/github-repo-catalog)
 
 ---
 
-## 🧭 Section 1: Executive Overview & Dual Interfaces
+## 🧭 Section 1: Executive Overview & Multi-Interface Navigation
 
-Managing **419+ repositories** requires immediate clarity without cognitive fatigue. This ecosystem provides **two complementary interfaces**:
+Managing **419 repositories** requires immediate clarity without cognitive fatigue. This ecosystem provides **three complementary interfaces**:
 
-0. **The AI Agent Instruction Protocol (`AGENTS.md` & `llms.txt`):**
-   * *Best for:* Autonomous AI agents (Claude Code, Codex CLI, Cursor) to navigate and query the repository programmatically without hallucination.
+0. **The Autonomous Agent Protocol (`AGENTS.md` & `llms.txt`):**
+   * *Best for:* Autonomous AI agents (Claude Code, Codex CLI, Cursor) to navigate and query the repository programmatically with zero hallucination.
 1. **The Tactical Web Application (`index.html` / GitHub Pages):**
-   * *Best for:* Visual exploration, rapid one-click filtering, interactive inspection, and sub-millisecond natural language semantic search.
-   * *Access:* Visit [justinhubbard37.github.io/github-repo-catalog](https://justinhubbard37.github.io/github-repo-catalog) or open `index.html` locally.
+   * *Best for:* Visual exploration, rapid one-click filtering, accordion focus trays, and sub-millisecond semantic search.
 2. **The Master Markdown Catalog (`README.md`):**
    * *Best for:* Offline reference, terminal text searching (`grep`), and GitHub native repository reading.
 
 ---
 
-## 🚀 Section 2: The 31 Core Proprietary Builds (Flagship Cheat-Sheet)
+## 🔒 Section 2: Information Governance & Publication Policy (Policy A)
 
-Your proprietary creations represent original architectures across local-first AI, desktop agent governance, and brand engineering. Here is your quick-reference role mapping:
-
-| Project | Primary Stack | Core Architectural Role |
-| :--- | :---: | :--- |
-| **`code-name`** | TypeScript / Tauri v2 | Sovereign agent harness with 3D GraphRAG, A2UI/A2A boundary, local knowledge graph, and localhost LLM routing. |
-| **`code-name-2-claude-desktop-codex-continuation`** | TypeScript / Tauri v2 | Governed two-pane workspace, local knowledge-graph persistence, and SQLite ingestion/retrieval engine. |
-| **`HarneSSHost`** | Rust / Tauri | Modular desktop host and evaluation platform for AI agent harnesses with segregated upstream trees. |
-| **`a-team-studio`** | React / Rust / SQLite | Local-first Tauri v2 desktop studio prototype with SQLite persistence boundaries. |
-| **`SimplifAI`** | Web / OPFS | Local-first web app utilizing Origin Private File System (OPFS) and BYOK AI integration. |
-| **`Codex-SimplifAI`** | Tauri v2 / React | Desktop application converting complex source text into step-by-step guides, outlines, and summaries. |
-| **`Autodidact-AI-Learning-Studio`** | AI / Web | Adaptive learning studio turning notes, uploads, and questions into structured study sessions and quizzes. |
-| **`Interactive-Workbook-Pro`** | HTML / JS | Dynamic interactive educational workbook with self-grading modules. |
-| **`RAG-System---Turning-YouTube-into-Assignments`** | Python / RAG | Atlas — Multimodal pipeline analyzing YouTube lectures and generating structured educational assignments. |
-| **`TARGHIT`** | Marketing OS | Strategic marketing and brand execution operating system. |
-| **`TARGHIT-TerminalTreason`** | Enterprise Hygiene | Deployment archives and hygiene assets for TARGHIT and TerminalTreason. |
-| **`TerminalTreason`** | React / Tailwind | Cybernetic terminal UI and agent workspace for enterprise-grade execution. |
-| **`ScratchPad`** | Tauri v2 / HTML | Local-first infinite-canvas sticky note desktop application with BYOK AI. |
-| **`LMSA`** | Android / Kotlin | Privacy-first Android AI chat client with encrypted history and ZDR multi-backend routing. |
-| **`OnTheLLow-Idea-Discovery-System`** | Claude Code | Autonomous idea discovery and concept extraction workflow. |
-| **`DigitalAlchemy_Master_Canon.json`** | Schema / JSON | Living master knowledge canon and strategic prompt schema for DigitalAlchemy. |
-| **`outskill-ai-lab`** | Python / Agents SDK | Production-grade AI agent project labs built with OpenAI Agents SDK. |
-| **`envharness`** | Python / Sim | Modular framework awakening static virtual environments for autonomous agent learning. |
-| **`Projects-for-Code-Merge-App-Stress-Testing`** | Multi-lang | Stress testbed suite of multi-framework codebases for merge engines. |
+This repository operates under **Policy A (Unified Portfolio Directory with Intentional Metadata Disclosure)**:
+* **Intentional Discovery:** High-level project metadata (repository names, synthesized descriptions, capability tags, and primary languages) for all **419 repositories** (including the 21 private workspaces) is intentionally indexed to provide a 100% complete command center.
+* **Source Code Access Control:** The underlying source code, assets, and branches for private repositories remain strictly access-controlled and encrypted on GitHub.
+* **Audit Integrity:** Automated verification tools and security scanners can verify that metadata exposure is an intentional architectural decision, not an accidental data leak.
 
 ---
 
-## 🎯 Section 3: How to Use the Taxonomy & Capability Hubs
+## 🚀 Section 3: The Complete 31 Core Proprietary Builds (Flagship Cheat-Sheet)
 
-The catalog organizes 419 repositories across 5 operational dimensions:
+All **31 original source projects** created by Justin Hubbard are cataloged below:
+
+| # | Project | Stack | Visibility | Core Architectural Role & Purpose |
+| :-: | :--- | :---: | :---: | :--- |
+| 1 | **`a-team-studio`** | `TypeScript` | `Public` | Local-first Tauri v2 desktop studio prototype with React/TypeScript frontend and Rust/SQLite persistence boundary. |
+| 2 | **`AlchemyArchitect`** | `Docs / Config` | `Private 🔒` | AlchemyArchitect AI Studio application build |
+| 3 | **`Autodidact-AI-Learning-Studio`** | `Docs / Config` | `Private 🔒` | This app is an AI-powered learning studio for serious self-learners that turns questions, notes, and uploaded material into structured explanations, quizzes, and adaptive study sessions. |
+| 4 | **`ChatGPT-Codex`** | `Docs / Config` | `Private 🔒` | Projects created using ChatGPT-Codex |
+| 5 | **`Cloned-Outskill-Generative-AI-Engineering-Mastermind-Repo`** | `Jupyter Notebook` | `Private 🔒` | Hands-on workshop code, notebooks, and API integration guides for Outskill GenAI Mastermind. |
+| 6 | **`code-name`** | `TypeScript` | `Private 🔒` | End goal: a Tauri v2, model-agnostic agent harness and self-growing local database ecosystem with 3D knowledge graph/GraphRAG, A2A/A2UI, ADK-Python, browser/WebMCP support, Ollama/LM Studio localhost, API-key providers, sidecars, gated execution, maximum user control, and local-first, data-sovereign workflows. |
+| 7 | **`code-name-2-claude-desktop-codex-continuation`** | `TypeScript` | `Private 🔒` | Local-first, model-agnostic desktop agent harness with two-pane workspace and local knowledge-graph persistence. |
+| 8 | **`Codex-SimplifAI`** | `Docs / Config` | `Public` | Desktop-first Tauri v2 AI application for turning complex source material into structured guides, summaries, and outlines. |
+| 9 | **`DigitalAlchemy_Master_Canon.json`** | `Docs / Config` | `Private 🔒` | Living master knowledge canon and strategic prompt schema for DigitalAlchemy workflows. |
+| 10 | **`github-repo-catalog`** | `Docs / Config` | `Public` | Comprehensive directory, categorized index, and automated overview of all repositories by Justinhubbard37. |
+| 11 | **`HarneSSHost`** | `Rust` | `Private 🔒` | Modular desktop host and evaluation platform for AI agent harnesses and tool integration. |
+| 12 | **`Interactive-Workbook-Pro`** | `HTML` | `Private 🔒` | Interactive web-based educational workbook application with dynamic exercise modules. |
+| 13 | **`landing-page`** | `HTML` | `Public` | Static web landing page deployment with custom domain configuration. |
+| 14 | **`landing-page-with-qwen3-coder`** | `Docs / Config` | `Public` | Precision Made Cinematic interactive landing page built with Qwen3-Coder. |
+| 15 | **`LMSA`** | `Docs / Config` | `Public` | Privacy-first Android AI chat client with encrypted history, ZDR routing, and multi-backend support (OpenRouter, LM Studio, Ollama). |
+| 16 | **`MacroMaster`** | `Docs / Config` | `Private 🔒` | Step-by-step instructional roadmaps and automated macro execution playbooks. |
+| 17 | **`NBA-basketball-statistics`** | `Docs / Config` | `Public` | Data tracking, metrics aggregation, and analytics toolkit for NBA basketball games. |
+| 18 | **`nextjs-ai-chatbot`** | `TypeScript` | `Private 🔒` | Full-stack AI chatbot SDK template built with Next.js 14 App Router and Vercel AI SDK. |
+| 19 | **`OnTheLLow-Idea-Discovery-System`** | `Docs / Config` | `Private 🔒` | Autonomous idea discovery and concept extraction workflow built with Claude Code. |
+| 20 | **`Projects-for-Code-Merge-App-Stress-Testing`** | `HTML` | `Public` | Compiled testbed suite of multi-framework codebases for merge engine stress-testing. |
+| 21 | **`RAG-System---Turning-YouTube-into-Assignments`** | `Python` | `Private 🔒` | Atlas — AI-powered content analysis platform combining YouTube transcription, academic research, and assignment generation. |
+| 22 | **`Replit`** | `Docs / Config` | `Private 🔒` | Cloud development configurations and interactive workspace templates. |
+| 23 | **`ScratchPad`** | `HTML` | `Public` | Local-first, infinite-canvas sticky note desktop application with BYOK AI built with Tauri v2. |
+| 24 | **`SimplifAI`** | `Docs / Config` | `Private 🔒` | Local-first web application with Origin Private File System (OPFS) and BYOK AI integration. |
+| 25 | **`Supabase`** | `Docs / Config` | `Public` | Data storage, vector embeddings, and backend integration bridge with Mistral AI. |
+| 26 | **`TARGHIT`** | `Docs / Config` | `Private 🔒` | MARKETING_OS — Comprehensive strategic marketing and brand execution operating system. |
+| 27 | **`TARGHIT-TerminalTreason`** | `Docs / Config` | `Private 🔒` | Enterprise hygiene archives and deployment assets for TARGHIT and TerminalTreason. |
+| 28 | **`TerminalTreason`** | `TypeScript` | `Private 🔒` | Enterprise-grade cybernetic terminal UI and agent workspace built with React and Tailwind. |
+| 29 | **`TerminalTreason-Brand-Width_Merge`** | `TypeScript` | `Private 🔒` | Enterprise-grade terminal UI and agent workspace merge branch. |
+| 30 | **`the-ai-underground-project`** | `Rust` | `Private 🔒` | Local-first desktop AI workbench and terminal harness built with Tauri and React. |
+| 31 | **`The-Local-Layer`** | `Docs / Config` | `Private 🔒` | Local-first orchestration layer and data-sovereign runtime for local LLMs and tools. |
+
+---
+
+## 🎯 Section 4: Capability Taxonomy & Operational Hubs
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
@@ -85,59 +104,47 @@ The catalog organizes 419 repositories across 5 operational dimensions:
 
 ---
 
-## 🔍 Section 4: Search Strategies & Natural Language Querying
+## 🔍 Section 5: Full-Field Search & Natural Language Strategies
 
-The search engine blends **Lexical BM25 (Exact keywords)** with **Semantic Vector Similarity (Conceptual intent)**.
+The search engine executes across **names, descriptions, tags, and topics**:
 
-### Examples of High-Yield Queries:
-* **"desktop agent harness"** → Surfaces `code-name-2`, `HarneSSHost`, `the-ai-underground-project`.
-* **"turn video into homework"** → Surfaces `RAG-System---Turning-YouTube-into-Assignments` (Atlas).
-* **"local sqlite persistence"** → Surfaces `a-team-studio`, `SimplifAI`, `code-name`.
-* **"high throughput inference"** → Surfaces `FreeToken`, `vllm`, `llama.cpp`.
-* **"study with quizzes"** → Surfaces `Autodidact-AI-Learning-Studio`, `Interactive-Workbook-Pro`.
-* **"mcp protocol tools"** → Surfaces `mcp-course`, Model Context Protocol servers.
+### High-Yield Example Queries:
+* **`sqlite persistence`** → Surfaces `a-team-studio`, `SimplifAI`, `code-name-2`.
+* **`video to homework`** → Surfaces `RAG-System---Turning-YouTube-into-Assignments` (Atlas).
+* **`desktop agent harness`** → Surfaces `code-name-2`, `HarneSSHost`, `the-ai-underground-project`.
+* **`high throughput inference`** → Surfaces `FreeToken`, `vllm`, `llama.cpp`.
 
 ---
 
-## 🛠️ Section 5: Workflow Integration: Using Repos with Local Agents
+## 🔄 Section 6: Future Maintenance & Complete `sync-catalog.py` Engine
 
-### 1. Instant 1-Click Clone
-In the web application, clicking **`[ 📋 CLONE ]`** on any card copies the exact `git clone` command to your clipboard.
-
-### 2. Referencing Codebases in Claude Code / Codex CLI
-When directing an AI agent to build a new feature, you can point it directly to your indexed local repos:
-```bash
-# Example: Using a-team-studio as a reference for Tauri v2 SQLite boundaries
-claude "Inspect the SQLite persistence boundary in ./a-team-studio and replicate its schema in our new service."
-```
-
----
-
-## 🔄 Section 6: Future Maintenance & 1-Click Re-Syncing
-
-Whenever you create new repositories or fork new upstream tools, you can re-synchronize the entire catalog and archive the previous version in **one single command**:
+To re-synchronize the catalog whenever you add or fork new repositories:
 
 ```bash
-# Run the included automated synchronization script:
 python3 sync-catalog.py --token <YOUR_GITHUB_PAT>
 ```
 
-### What `sync-catalog.py` Does Automatically:
-1. Queries the GitHub API for all `@Justinhubbard37` repositories.
-2. Synthesizes descriptions for any new repositories.
-3. Automatically snapshots the previous version to `/archive/`.
-4. Updates `README.md`, `index.html`, and `PORTFOLIO_GUIDE.md`.
-5. Pushes all updates and creates a new Git milestone tag.
+### Mechanical Actions Executed by `sync-catalog.py`:
+1. Fetches all repositories via GitHub REST API with pagination.
+2. Extracts upstream fork provenance and lifecycle timestamps.
+3. Automatically synthesizes missing descriptions and computes taxonomy tags.
+4. Generates canonical `catalog-manifest.json` with top-level metadata and schema.
+5. Runs **`validate_catalog()`** consistency checks (fails immediately on any discrepancy).
+6. Regenerates derived artifacts (`README.md`, `llms.txt`, `AGENTS.md`, `PORTFOLIO_GUIDE.md`, `index.html`).
+7. Snapshots historical deliverables to `/archive/`.
+8. Pushes all updates to GitHub and emits an authenticated success confirmation.
 
 ---
 
 ## 🏛️ Section 7: Archival Vault & Milestone History
 
-Historical deliverables are preserved permanently in the `/archive/` directory:
-* **`archive/v1-basic-catalog.md`** — Initial language-based index.
-* **`archive/v2-matrix-taxonomy-catalog.md`** — Multi-taxonomy matrix with education hub.
-* **`archive/v3-flat-tactical-app.html`** — Flat-grid tactical search application.
-* **`CHANGELOG.md`** — Chronological log of all version updates and architectural decisions.
+Historical deliverables are preserved in `/archive/`:
+* **`archive/v6-accordion-deck.html`** — v6.0 Accordion focus deck.
+* **`archive/v5-unified-matrix.html`** — v5.0 Unified matrix deck.
+* **`archive/v4-progressive-command-deck.html`** — v4.0 Progressive command deck.
+* **`archive/v3-flat-tactical-app.html`** — v3.0 Flat search app.
+* **`archive/v2-matrix-taxonomy-catalog.md`** — v2.0 Matrix taxonomy catalog.
+* **`CHANGELOG.md`** — Complete release changelog.
 
 ---
-<sub>*Field Manual v4.0.0 • Maintained for @Justinhubbard37 • Sovereign AI Artifact Directory*</sub>
+<sub>*Field Manual v7.0.0 • Maintained for @Justinhubbard37 • Sovereign AI Artifact Directory*</sub>
