@@ -1,9 +1,20 @@
 # 📚 GitHub Repository Catalog & Command Deck
 
-> **Curated Account Directory for [@Justinhubbard37](https://github.com/Justinhubbard37)**  
-> 🌐 **[LAUNCH LIVE COMMAND DECK // TACTICAL SEARCH & TELEMETRY](https://justinhubbard37.github.io/github-repo-catalog)**  
-> 📖 **[READ PORTFOLIO FIELD MANUAL & SYSTEM GUIDE ()](./PORTFOLIO_GUIDE.md)** • 📜 **[CHANGELOG](./CHANGELOG.md)**  
-> *Catalog Version: **v6.0.0 (Accordion Command Deck)** • Total Repositories: **419***
+```text
+========================================================================================
+[OPERATOR_PATH]:  🌐 LIVE APP: https://justinhubbard37.github.io/github-repo-catalog
+                  📖 FIELD MANUAL: ./PORTFOLIO_GUIDE.md • 📜 CHANGELOG: ./CHANGELOG.md
+[AUTONOMOUS_AI]:  🤖 AGENT DIRECTIVES: ./AGENTS.md • ⚡ COMPACT LLM INDEX: ./llms.txt
+                  📊 MACHINE MANIFEST: ./catalog-manifest.json
+========================================================================================
+[AI_AGENT_FAST_QUERY]:
+  python3 -c "import json; data=json.load(open('catalog-manifest.json')); print([{'name': r['name'], 'desc': r['description'], 'lang': r['language']} for r in data if 'YOUR_KEYWORD' in (r['name']+r['description']).lower()])"
+========================================================================================
+```
+
+> **Curated Sovereign AI Repository Vault for [@Justinhubbard37](https://github.com/Justinhubbard37)**  
+> 🤖 **NOTICE FOR AUTONOMOUS AI AGENTS:** Do **NOT** parse this full ~300KB markdown catalog into your context window. Ingest **[`AGENTS.md`](./AGENTS.md)** for task-to-repository routing or query **[`catalog-manifest.json`](./catalog-manifest.json)** programmatically.  
+> *SYS.STATUS: OPERATIONAL • 419 NODES ACTIVE • 31 CORE BUILDS • CATALOG v6.2.0*
 
 ---
 
