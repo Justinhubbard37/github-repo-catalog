@@ -11,6 +11,8 @@
 
 Managing **419+ repositories** requires immediate clarity without cognitive fatigue. This ecosystem provides **two complementary interfaces**:
 
+0. **The AI Agent Instruction Protocol (`AGENTS.md` & `llms.txt`):**
+   * *Best for:* Autonomous AI agents (Claude Code, Codex CLI, Cursor) to navigate and query the repository programmatically without hallucination.
 1. **The Tactical Web Application (`index.html` / GitHub Pages):**
    * *Best for:* Visual exploration, rapid one-click filtering, interactive inspection, and sub-millisecond natural language semantic search.
    * *Access:* Visit [justinhubbard37.github.io/github-repo-catalog](https://justinhubbard37.github.io/github-repo-catalog) or open `index.html` locally.
