@@ -4,40 +4,38 @@ All notable releases, architectural taxonomy changes, and application versions f
 
 ---
 
-## [v4.0.0] - 2026-09-03 (Current Release)
+## [v5.0.0] - 2026-09-03 (Current Unified Production Release)
+### 🎛️ Unified Command Matrix with Progressive Trays & Real-Time Hybrid Filters
+- **The Filter Matrix (Screenshot Alignment):** Re-integrated the complete tactical Filter Matrix directly at the top of the app:
+  - **Operational Capability Filters:** `ALL ASSETS (419)`, `✨ CORE BUILDS (31)`, `🎓 EDUCATION & LEARNING (66)`, `🤖 AGENT HARNESSES (103)`, `⚡ SKILLS & MCP (61)`, `🧠 INFERENCE ENGINES (54)`, `🗄️ RAG & KNOWLEDGE (33)`, `🎨 DOMAIN STUDIOS (38)`, `🧪 EVAL & TESTING (32)` with live asset counts.
+  - **Governing Entity Clusters:** `🌐 GOOGLE ECOSYSTEM`, `🤖 OPENAI / ANTHROPIC`, `🏢 META / MICROSOFT`, `🧪 OPEN FRONTIER LABS`.
+  - **Runtime Language Filters:** `ALL LANGUAGES`, `🐍 PYTHON`, `⚡ TYPESCRIPT`, `📜 JAVASCRIPT`, `🦀 RUST`, `🐹 GO`, `⚙️ C++`, `🌐 HTML / UI`.
+  - **Reset Control:** `[RESET ALL]` button for instant state clearing.
+- **Hierarchical Progressive Trays (v4.0 Concept):** Rather than a flat list, matched assets dynamically group into collapsible, organized domain trays (`🚀 Core Builds`, `🎓 Education Hub`, `🤖 Agent Systems`, `🗄️ RAG & Knowledge`, etc.).
+- **Real-Time Dual-Engine Search:** Real-time hybrid BM25 + semantic concept expansions with sub-millisecond query latency.
+
+---
+
+## [v4.0.0] - 2026-09-03
 ### 🚀 Progressive Disclosure Command Deck & Archival Vault
-- **Architecture:** Transitioned the web UI from a flat grid into a 3-stage **Progressive Disclosure Command Deck**:
-  - **Stage 1 (Command Deck):** High-level operational domain hubs for zero-scroll orientation.
-  - **Stage 2 (Focused Domain View):** Isolated sub-section trays with collapsible card containers.
-  - **Stage 3 (Hierarchical Search):** Real-time hybrid search results rendered grouped by parent domain rather than a flat list.
-- **Preservation & Field Manual:**
-  - Added dedicated `/archive/` directory preserving all historical milestone deliverables (`v1.0`, `v2.0`, `v3.0`).
-  - Created `PORTFOLIO_GUIDE.md` comprehensive operational field manual.
-  - Created `sync-catalog.py` automated 1-click update script for future repository synchronization.
-  - Added discreet tactical archive switcher in the web application UI.
+- Initial 3-stage command deck and isolated domain view.
+- Added `PORTFOLIO_GUIDE.md` operational field manual.
+- Snapshotted to `archive/v4-progressive-command-deck.html`.
 
 ---
 
 ## [v3.0.0] - 2026-09-03
 ### 🛰️ Covert Ops Tactical Search Application
-- **Aesthetic:** High-precision Covert Ops / Ghost Recon / Special Access Program (SAP) UI design (matte obsidian `#090a0c`, gunmetal panels, tungsten borders `#20242c`, bone off-white typography, reticle crosshairs).
-- **Boot Sequence:** 2.0-second cinematic system initialization with cybernetic text decryption, telemetry readout, and ESC/click bypass.
-- **Search Core:** Real-time dual-engine hybrid search (Lexical BM25 + Semantic Vector Cosine Similarity via Reciprocal Rank Fusion) with `< 1ms` query latency.
-- **Action Triggers:** 1-Click `[ 📋 CLONE ]` with clipboard feedback, `[ 🔗 GITHUB ]` navigation, and `[ 🔍 INSPECT ]` metadata slide-out drawer.
+- Covert Ops aesthetic, 2.0s boot sequence, real-time dual-engine hybrid search.
 
 ---
 
 ## [v2.0.0] - 2026-09-03
 ### 🎯 Multi-Taxonomy Matrix (Option B) & Education Hub
-- **Taxonomy:** Implemented non-exclusive cross-listing across functional domains.
-- **Education Hub:** Created dedicated 4-tier learning experience category (`Interactive Studios`, `Structured Courses`, `Assignment Engines`, `Reference Guides`).
-- **Decomposed Sub-Tables:** Split large composite categories into focused 4-8 row tables to eliminate UI flooding.
-- **Unified Developer Roll-ups:** Consolidated fragmented sub-organizations under Google, OpenAI/Anthropic, Meta/Microsoft, and Frontier Labs.
+- Option B cross-listing taxonomy with dedicated 4-tier education hub.
 
 ---
 
 ## [v1.0.0] - 2026-09-03
 ### 📚 Baseline Language Catalog & API Initialization
-- Initial automated scan of 417 repositories across the `@Justinhubbard37` account.
-- Synthesized one-line descriptions from repository READMEs for repositories without metadata.
-- Generated `github-repos-index.md` with key metrics summary, language ecosystem breakdown, and collapsible master directory.
+- Initial complete index of all 417 repositories.
