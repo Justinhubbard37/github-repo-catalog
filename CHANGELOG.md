@@ -4,15 +4,20 @@ All notable releases, architectural taxonomy changes, and application versions f
 
 ---
 
-## [v5.0.0] - 2026-09-03 (Current Unified Production Release)
-### 🎛️ Unified Command Matrix with Progressive Trays & Real-Time Hybrid Filters
-- **The Filter Matrix (Screenshot Alignment):** Re-integrated the complete tactical Filter Matrix directly at the top of the app:
-  - **Operational Capability Filters:** `ALL ASSETS (419)`, `✨ CORE BUILDS (31)`, `🎓 EDUCATION & LEARNING (66)`, `🤖 AGENT HARNESSES (103)`, `⚡ SKILLS & MCP (61)`, `🧠 INFERENCE ENGINES (54)`, `🗄️ RAG & KNOWLEDGE (33)`, `🎨 DOMAIN STUDIOS (38)`, `🧪 EVAL & TESTING (32)` with live asset counts.
-  - **Governing Entity Clusters:** `🌐 GOOGLE ECOSYSTEM`, `🤖 OPENAI / ANTHROPIC`, `🏢 META / MICROSOFT`, `🧪 OPEN FRONTIER LABS`.
-  - **Runtime Language Filters:** `ALL LANGUAGES`, `🐍 PYTHON`, `⚡ TYPESCRIPT`, `📜 JAVASCRIPT`, `🦀 RUST`, `🐹 GO`, `⚙️ C++`, `🌐 HTML / UI`.
-  - **Reset Control:** `[RESET ALL]` button for instant state clearing.
-- **Hierarchical Progressive Trays (v4.0 Concept):** Rather than a flat list, matched assets dynamically group into collapsible, organized domain trays (`🚀 Core Builds`, `🎓 Education Hub`, `🤖 Agent Systems`, `🗄️ RAG & Knowledge`, etc.).
-- **Real-Time Dual-Engine Search:** Real-time hybrid BM25 + semantic concept expansions with sub-millisecond query latency.
+## [v6.0.0] - 2026-09-03 (Current Release: Accordion Focus Deck)
+### 🎯 Mutual Exclusion Accordion Disclosure & Global Master Toggle
+- **Default State (All Collapsed):** All category trays start completely collapsed when the page loads for zero-clutter orientation.
+- **Single-Open Accordion Logic:**
+  - Clicking any category tray expands it while automatically collapsing all other trays.
+  - Clicking an open tray collapses it.
+- **Global Control Button on Right:** Added dedicated `[ [+] EXPAND ALL TRAYS ]` / `[ [-] COLLAPSE ALL TRAYS ]` master toggle on the right side of the telemetry bar.
+- **Screenshot Filter Matrix:** Retained full tactical capability pills with live counts, governing entity clusters, language filters, and reset button directly at the top.
+
+---
+
+## [v5.0.0] - 2026-09-03
+### 🎛️ Unified Command Matrix with Progressive Trays
+- Re-integrated full capability pills, entity clusters, and language selectors from v3.0 screenshot on top of progressive trays.
 
 ---
 
@@ -20,7 +25,6 @@ All notable releases, architectural taxonomy changes, and application versions f
 ### 🚀 Progressive Disclosure Command Deck & Archival Vault
 - Initial 3-stage command deck and isolated domain view.
 - Added `PORTFOLIO_GUIDE.md` operational field manual.
-- Snapshotted to `archive/v4-progressive-command-deck.html`.
 
 ---
 
