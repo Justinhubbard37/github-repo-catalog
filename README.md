@@ -5,16 +5,17 @@
 [OPERATOR_PATH]:  🌐 LIVE APP: https://justinhubbard37.github.io/github-repo-catalog
                   📖 FIELD MANUAL: ./PORTFOLIO_GUIDE.md • 📜 CHANGELOG: ./CHANGELOG.md
 [AUTONOMOUS_AI]:  🤖 AGENT DIRECTIVES: ./AGENTS.md • ⚡ COMPACT LLM INDEX: ./llms.txt
-                  📊 MACHINE MANIFEST: ./catalog-manifest.json
+                  📊 CANONICAL MANIFEST: ./catalog-manifest.json
 ========================================================================================
-[AI_AGENT_FAST_QUERY]:
-  python3 -c "import json; data=json.load(open('catalog-manifest.json')); print([{'name': r['name'], 'desc': r['description'], 'lang': r['language']} for r in data if 'YOUR_KEYWORD' in (r['name']+r['description']).lower()])"
+[AI_AGENT_FULL_FIELD_QUERY (Name + Desc + Tags + Topics)]:
+  python3 -c "import json; m=json.load(open('catalog-manifest.json')); q='YOUR_QUERY'; print([{'name': r['name'], 'desc': r['description'], 'tags': r['tags'], 'lang': r['language']} for r in m['repositories'] if q in (r['name']+' '+r['description']+' '+' '.join(r.get('topics',[]))+' '+' '.join(r.get('tags',[]))).lower()])"
 ========================================================================================
 ```
 
 > **Curated Sovereign AI Repository Vault for [@Justinhubbard37](https://github.com/Justinhubbard37)**  
-> 🤖 **NOTICE FOR AUTONOMOUS AI AGENTS:** Do **NOT** parse this full ~300KB markdown catalog into your context window. Ingest **[`AGENTS.md`](./AGENTS.md)** for task-to-repository routing or query **[`catalog-manifest.json`](./catalog-manifest.json)** programmatically.  
-> *SYS.STATUS: OPERATIONAL • 419 NODES ACTIVE • 31 CORE BUILDS • CATALOG v6.2.0*
+> 🤖 **NOTICE FOR AUTONOMOUS AI AGENTS:** Do **NOT** parse this full ~300KB markdown catalog into your context window. Ingest **[`AGENTS.md`](./AGENTS.md)** for task-to-repository routing or query **[`catalog-manifest.json`](./catalog-manifest.json)** directly.  
+> 🔒 **GOVERNANCE POLICY:** Policy A (Complete Metadata Indexing; Source Code Protected)  
+> *SYS.STATUS: OPERATIONAL • 419 NODES ACTIVE • 31 CORE BUILDS • CATALOG v7.0.0*
 
 ---
 
@@ -60,7 +61,7 @@
 - [📦 Curated AI Models, Prompts & Other Stacks](#curated-stacks)
 
 ### 📋 5. Master Directory
-- [📋 Complete Master Repository Directory (417 Repositories)](#master-directory)
+- [📋 Complete Master Repository Directory (419 Repositories)](#master-directory)
 
 ---
 
