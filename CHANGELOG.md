@@ -4,6 +4,14 @@ All notable releases, architectural taxonomy changes, and application versions f
 
 ---
 
+## [v6.2.0] - 2026-09-03
+### ⚡ Tactical AI Agent Fast-Path Header & Query Directive
+- **Tactical README Header (Option 3):** Added Covert Ops monospace telemetry block to the root `README.md` defining dual Operator/Agent paths.
+- **AI Agent Directive:** Explicit instructions preventing LLMs from burning 50,000+ context tokens parsing 300KB markdown tables, directing them to `AGENTS.md`, `llms.txt`, and `catalog-manifest.json`.
+- **Zero-Hallucination Query Snippet:** Embedded ready-to-run Python one-liner directly into the README header for instant agent execution.
+
+---
+
 ## [v6.1.0] - 2026-09-03
 ### 🤖 Autonomous Agent Machine-Readability Stack (AGENTS.md & llms.txt)
 - **AGENTS.md:** Created autonomous AI agent operating protocol, task-to-repository routing matrix, programmatic query snippets, and flagship core architecture specifications.
