@@ -4,6 +4,14 @@ All notable releases, architectural taxonomy changes, and application versions f
 
 ---
 
+## [v6.1.0] - 2026-09-03
+### 🤖 Autonomous Agent Machine-Readability Stack (AGENTS.md & llms.txt)
+- **AGENTS.md:** Created autonomous AI agent operating protocol, task-to-repository routing matrix, programmatic query snippets, and flagship core architecture specifications.
+- **llms.txt:** Created standard high-density LLM discovery index for instant ingestion by external AI models.
+- **catalog-manifest.json:** Programmatically structured JSON dataset of all 419 repositories for instantaneous `jq`/`python` querying.
+
+---
+
 ## [v6.0.0] - 2026-09-03 (Current Release: Accordion Focus Deck)
 ### 🎯 Mutual Exclusion Accordion Disclosure & Global Master Toggle
 - **Default State (All Collapsed):** All category trays start completely collapsed when the page loads for zero-clutter orientation.
