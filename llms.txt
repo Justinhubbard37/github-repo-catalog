@@ -1,0 +1,49 @@
+# Justin Hubbard Sovereign AI Repository Catalog
+> Curated Account Index & Architecture Portfolio for [@Justinhubbard37](https://github.com/Justinhubbard37)
+> Total Repositories: 419 | Core Proprietary Builds: 31 | Public: 398 | Private: 21
+
+## Core Proprietary Projects (31 Builds)
+- [a-team-studio](https://github.com/Justinhubbard37/a-team-studio): Local-first Tauri v2 desktop studio prototype with React/TypeScript frontend and Rust/SQLite persistence boundary. (Lang: TypeScript)
+- [AlchemyArchitect](https://github.com/Justinhubbard37/AlchemyArchitect): AlchemyArchitect AI Studio application build (Lang: Docs / Config)
+- [Autodidact-AI-Learning-Studio](https://github.com/Justinhubbard37/Autodidact-AI-Learning-Studio): This app is an AI-powered learning studio for serious self-learners that turns questions, notes, and uploaded material into structured explanations, quizzes, and adaptive study sessions. (Lang: Docs / Config)
+- [ChatGPT-Codex](https://github.com/Justinhubbard37/ChatGPT-Codex): Projects created using ChatGPT-Codex (Lang: Docs / Config)
+- [Cloned-Outskill-Generative-AI-Engineering-Mastermind-Repo](https://github.com/Justinhubbard37/Cloned-Outskill-Generative-AI-Engineering-Mastermind-Repo): Hands-on workshop code, notebooks, and API integration guides for Outskill GenAI Mastermind. (Lang: Jupyter Notebook)
+- [code-name](https://github.com/Justinhubbard37/code-name): End goal: a Tauri v2, model-agnostic agent harness and self-growing local database ecosystem with 3D knowledge graph/GraphRAG, A2A/A2UI, ADK-Python, browser/WebMCP support, Ollama/LM Studio localhost, API-key providers, sidecars, gated execution, maximum user control, and local-first, data-sovereign workflows. (Lang: TypeScript)
+- [code-name-2-claude-desktop-codex-continuation](https://github.com/Justinhubbard37/code-name-2-claude-desktop-codex-continuation): Local-first, model-agnostic desktop agent harness with two-pane workspace and local knowledge-graph persistence. (Lang: TypeScript)
+- [Codex-SimplifAI](https://github.com/Justinhubbard37/Codex-SimplifAI): Desktop-first Tauri v2 AI application for turning complex source material into structured guides, summaries, and outlines. (Lang: Docs / Config)
+- [DigitalAlchemy_Master_Canon.json](https://github.com/Justinhubbard37/DigitalAlchemy_Master_Canon.json): Living master knowledge canon and strategic prompt schema for DigitalAlchemy workflows. (Lang: Docs / Config)
+- [github-repo-catalog](https://github.com/Justinhubbard37/github-repo-catalog): Comprehensive directory, categorized index, and automated overview of all repositories by Justinhubbard37. (Lang: Docs / Config)
+- [HarneSSHost](https://github.com/Justinhubbard37/HarneSSHost): Modular desktop host and evaluation platform for AI agent harnesses and tool integration. (Lang: Rust)
+- [Interactive-Workbook-Pro](https://github.com/Justinhubbard37/Interactive-Workbook-Pro): Interactive web-based educational workbook application with dynamic exercise modules. (Lang: HTML)
+- [landing-page](https://github.com/Justinhubbard37/landing-page): Static web landing page deployment with custom domain configuration. (Lang: HTML)
+- [landing-page-with-qwen3-coder](https://github.com/Justinhubbard37/landing-page-with-qwen3-coder): Precision Made Cinematic interactive landing page built with Qwen3-Coder. (Lang: Docs / Config)
+- [LMSA](https://github.com/Justinhubbard37/LMSA): Privacy-first Android AI chat client with encrypted history, ZDR routing, and multi-backend support (OpenRouter, LM Studio, Ollama). (Lang: Docs / Config)
+- [MacroMaster](https://github.com/Justinhubbard37/MacroMaster): Step-by-step instructional roadmaps and automated macro execution playbooks. (Lang: Docs / Config)
+- [NBA-basketball-statistics](https://github.com/Justinhubbard37/NBA-basketball-statistics): Data tracking, metrics aggregation, and analytics toolkit for NBA basketball games. (Lang: Docs / Config)
+- [nextjs-ai-chatbot](https://github.com/Justinhubbard37/nextjs-ai-chatbot): Full-stack AI chatbot SDK template built with Next.js 14 App Router and Vercel AI SDK. (Lang: TypeScript)
+- [OnTheLLow-Idea-Discovery-System](https://github.com/Justinhubbard37/OnTheLLow-Idea-Discovery-System): Autonomous idea discovery and concept extraction workflow built with Claude Code. (Lang: Docs / Config)
+- [Projects-for-Code-Merge-App-Stress-Testing](https://github.com/Justinhubbard37/Projects-for-Code-Merge-App-Stress-Testing): Compiled testbed suite of multi-framework codebases for merge engine stress-testing. (Lang: HTML)
+- [RAG-System---Turning-YouTube-into-Assignments](https://github.com/Justinhubbard37/RAG-System---Turning-YouTube-into-Assignments): Atlas — AI-powered content analysis platform combining YouTube transcription, academic research, and assignment generation. (Lang: Python)
+- [Replit](https://github.com/Justinhubbard37/Replit): Cloud development configurations and interactive workspace templates. (Lang: Docs / Config)
+- [ScratchPad](https://github.com/Justinhubbard37/ScratchPad): Local-first, infinite-canvas sticky note desktop application with BYOK AI built with Tauri v2. (Lang: HTML)
+- [SimplifAI](https://github.com/Justinhubbard37/SimplifAI): Local-first web application with Origin Private File System (OPFS) and BYOK AI integration. (Lang: Docs / Config)
+- [Supabase](https://github.com/Justinhubbard37/Supabase): Data storage, vector embeddings, and backend integration bridge with Mistral AI. (Lang: Docs / Config)
+- [TARGHIT](https://github.com/Justinhubbard37/TARGHIT): MARKETING_OS — Comprehensive strategic marketing and brand execution operating system. (Lang: Docs / Config)
+- [TARGHIT-TerminalTreason](https://github.com/Justinhubbard37/TARGHIT-TerminalTreason): Enterprise hygiene archives and deployment assets for TARGHIT and TerminalTreason. (Lang: Docs / Config)
+- [TerminalTreason](https://github.com/Justinhubbard37/TerminalTreason): Enterprise-grade cybernetic terminal UI and agent workspace built with React and Tailwind. (Lang: TypeScript)
+- [TerminalTreason-Brand-Width_Merge](https://github.com/Justinhubbard37/TerminalTreason-Brand-Width_Merge): Enterprise-grade terminal UI and agent workspace merge branch. (Lang: TypeScript)
+- [the-ai-underground-project](https://github.com/Justinhubbard37/the-ai-underground-project): Local-first desktop AI workbench and terminal harness built with Tauri and React. (Lang: Rust)
+- [The-Local-Layer](https://github.com/Justinhubbard37/The-Local-Layer): Local-first orchestration layer and data-sovereign runtime for local LLMs and tools. (Lang: Docs / Config)
+
+## Capability Categories
+- [Education & Learning Hub](README.md#ed-studios): Interactive studios, courses, and content-to-curriculum pipelines.
+- [Agent Systems & Protocols](README.md#agent-harnesses): Autonomous desktop hosts, A2UI protocols, Claude Code skills, and MCP servers.
+- [Knowledge Graphs & RAG](README.md#rag-graphs): 3D GraphRAG, vector retrieval, and OPFS/SQLite local vaults.
+- [Inference & Acceleration](README.md#inf-engines): Local model serving, token acceleration (FreeToken), and vision models (Qwen3-VL).
+- [Domain Studios & Marketing OS](README.md#studio-marketing): TARGHIT marketing OS, cybernetic terminals, and mobile chat clients.
+- [Evaluation & Testing](README.md#eval-simulators): Agent environment simulators and code merge stress testbeds.
+
+## Reference Documentation
+- [Operational Field Manual](PORTFOLIO_GUIDE.md): Human-oriented architecture manual & flagship cheat-sheet.
+- [AI Agent Instructions](AGENTS.md): Machine-readable execution guide & task-to-repo routing rules.
+- [Machine Manifest](catalog-manifest.json): Full JSON array of all 419 repositories for programmatic query.
