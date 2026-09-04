@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JUSTIN HUBBARD // AI COMMAND DECK &amp; REPO CATALOG v5.0</title>
+  <title>JUSTIN HUBBARD // AI COMMAND MATRIX &amp; REPO CATALOG v6.0</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -221,7 +221,7 @@
     }
 
     /* ----------------------------------------------------
-       THE COMPLETE v3.0 COMMAND MATRIX / FILTERS (SCREENSHOT)
+       THE COMPLETE TACTICAL COMMAND MATRIX / FILTERS
        ---------------------------------------------------- */
     .command-matrix {
       border: 1px solid var(--border-subtle);
@@ -330,29 +330,66 @@
       background: rgba(197, 179, 130, 0.2);
     }
 
-    /* Telemetry match bar */
-    .match-telemetry {
+    /* ----------------------------------------------------
+       TELEMETRY & GLOBAL ACCORDION CONTROL ROW
+       ---------------------------------------------------- */
+    .controls-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .match-telemetry {
+      display: flex;
+      align-items: center;
+      gap: 16px;
       font-family: var(--font-mono);
       font-size: 11px;
       color: var(--text-muted);
       padding: 8px 14px;
       background: #08090b;
       border: 1px solid var(--border-subtle);
-      margin-bottom: 20px;
+      flex: 1;
     }
     .match-telemetry strong { color: var(--text-bone); }
 
+    .global-accordion-btn {
+      background: #08090b;
+      border: 1px solid var(--border-strong);
+      color: var(--accent-khaki);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 8px 16px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.15s ease;
+      user-select: none;
+      letter-spacing: 0.05em;
+    }
+    .global-accordion-btn:hover {
+      background: var(--accent-khaki-dim);
+      border-color: var(--accent-khaki);
+    }
+
     /* ----------------------------------------------------
-       PROGRESSIVE DISCLOSURE TRAYS & CARDS (v4.0 CONCEPTS)
+       PROGRESSIVE DISCLOSURE ACCORDION TRAYS
        ---------------------------------------------------- */
     .tray-container {
       border: 1px solid var(--border-subtle);
       background: var(--bg-panel);
-      margin-bottom: 20px;
+      margin-bottom: 16px;
+      transition: border-color 0.2s ease;
     }
+    .tray-container.open {
+      border-color: var(--border-strong);
+    }
+
     .tray-header {
       padding: 14px 18px;
       background: #0c0e12;
@@ -362,10 +399,13 @@
       cursor: pointer;
       user-select: none;
       border-bottom: 1px solid transparent;
-      transition: background 0.15s;
+      transition: background 0.15s, border-color 0.15s;
     }
-    .tray-header:hover { background: #12151b; }
-    .tray-container.open .tray-header { border-bottom-color: var(--border-subtle); }
+    .tray-header:hover { background: #13161c; }
+    .tray-container.open .tray-header {
+      border-bottom-color: var(--border-subtle);
+      background: #11141a;
+    }
 
     .tray-title-group {
       display: flex;
@@ -377,6 +417,9 @@
       font-size: 11px;
       color: var(--accent-khaki);
       width: 14px;
+      display: inline-block;
+      text-align: center;
+      transition: transform 0.15s;
     }
     .tray-title {
       font-family: var(--font-mono);
@@ -389,6 +432,7 @@
       color: var(--text-muted);
       margin-left: 6px;
     }
+
     .tray-count-badge {
       font-family: var(--font-mono);
       font-size: 10px;
@@ -396,7 +440,9 @@
       background: var(--accent-khaki-dim);
       border: 1px solid var(--accent-khaki);
       padding: 2px 8px;
+      letter-spacing: 0.05em;
     }
+
     .tray-body {
       padding: 18px;
       display: none;
@@ -586,6 +632,8 @@
     @media (max-width: 768px) {
       .tray-grid { grid-template-columns: 1fr; }
       .hero-row { flex-direction: column; align-items: flex-start; }
+      .controls-row { flex-direction: column; align-items: stretch; }
+      .global-accordion-btn { justify-content: center; }
     }
   </style>
 </head>
@@ -600,9 +648,9 @@
       </div>
       <div class="boot-title" id="boot-scramble-text">INITIALIZING COMMAND MATRIX...</div>
       <div class="boot-terminal-log">
-        >> DEPLOYING UNIFIED v5.0 MATRIX ARCHITECTURE...<br>
-        >> SYNCHRONIZING 419 ASSETS ACROSS CAPABILITY &amp; ENTITY CLUSTERS...<br>
-        >> MOUNTING PROGRESSIVE DISCLOSURE TRAYS &amp; REAL-TIME SEARCH...
+        >> MOUNTING ACCORDION FOCUS TRAYS &amp; REAL-TIME MATRIX...<br>
+        >> SYNCHRONIZING 419 ASSETS ACROSS DOMAIN CLUSTERS...<br>
+        >> ALL SYSTEMS OPERATIONAL // READY FOR DISCLOSURE.
       </div>
       <div class="boot-progress-bar">
         <div class="boot-progress-fill" id="boot-progress-fill"></div>
@@ -616,15 +664,15 @@
     <!-- Top Telemetry & Header -->
     <header>
       <div class="top-telemetry">
-        <span>COMMAND DECK // v5.0.0 (UNIFIED MATRIX)</span>
+        <span>COMMAND MATRIX // v6.0.0 (ACCORDION DECK)</span>
         <span><a href="PORTFOLIO_GUIDE.md" target="_blank">[ 📖 OPERATIONAL FIELD MANUAL ]</a></span>
-        <span>SYS.STATUS: FULL MATRIX ACTIVE</span>
+        <span>SYS.STATUS: OPERATIONAL</span>
       </div>
 
       <div class="hero-row">
         <div class="hero-identity">
           <h1>JUSTIN HUBBARD // AI ARTIFACT VAULT</h1>
-          <p>Unified Command Deck with Real-Time Capability Matrix, Ecosystem Filters &amp; Progressive Trays.</p>
+          <p>Tactical Command Deck with Focused Accordion Disclosure, Capability Filters &amp; Global Trays.</p>
         </div>
 
         <div class="hero-stats">
@@ -644,7 +692,7 @@
       </div>
     </header>
 
-    <!-- THE COMPLETE v3.0 COMMAND MATRIX FROM SCREENSHOT -->
+    <!-- THE COMPLETE TACTICAL FILTER MATRIX FROM SCREENSHOT -->
     <div class="command-matrix">
       
       <!-- Live Search Bar -->
@@ -709,26 +757,28 @@
 
     </div>
 
-    <!-- Match Telemetry Bar -->
-    <div class="match-telemetry">
-      <div>
-        ACTIVE MATRIX MATCHES: <strong id="matched-count">419</strong> OF <strong>419</strong>
+    <!-- Telemetry Bar with Global Expand/Collapse Button on the Right -->
+    <div class="controls-row">
+      <div class="match-telemetry">
+        <div>MATCHED ASSETS: <strong id="matched-count">419</strong> OF <strong>419</strong></div>
+        <div id="search-latency">ENGINE: HYBRID RRF • LATENCY: <strong>0.12ms</strong></div>
       </div>
-      <div id="search-latency">
-        ENGINE: HYBRID RRF • QUERY LATENCY: <strong>0.12ms</strong>
-      </div>
+
+      <button id="global-accordion-btn" class="global-accordion-btn" onclick="toggleAllTraysGlobal()">
+        <span id="global-btn-icon">[+]</span> <span id="global-btn-text">EXPAND ALL TRAYS</span>
+      </button>
     </div>
 
-    <!-- HIERARCHICAL PROGRESSIVE DISCLOSURE TRAYS (v4.0 CONCEPTS) -->
+    <!-- ACCORDION PROGRESSIVE DISCLOSURE TRAYS (DEFAULT ALL COLLAPSED) -->
     <main id="main-trays-container">
-      <!-- Rendered dynamically with categorized collapsible trays -->
+      <!-- Injected dynamically via JS with Single-Open Accordion Logic -->
     </main>
 
     <!-- Footer with Discreet Archive Vault Tag -->
     <footer>
-      <div>CATALOG v5.0.0 • MAINTAINED FOR @JUSTINHUBBARD37</div>
+      <div>CATALOG v6.0.0 • MAINTAINED FOR @JUSTINHUBBARD37</div>
       <div class="archive-vault-tag" id="open-archive-btn">
-        [ 🏛️ ARTIFACT_ARCHIVE // v5.0 (ACTIVE) ]
+        [ 🏛️ ARTIFACT_ARCHIVE // v6.0 (ACTIVE) ]
       </div>
     </footer>
 
@@ -774,6 +824,10 @@
       </p>
       <ul class="archive-list">
         <li>
+          <a href="archive/v5-unified-matrix.html" target="_blank">v5.0 Unified Matrix Deck</a>
+          <span style="color: var(--text-muted); font-size: 10px;">HTML</span>
+        </li>
+        <li>
           <a href="archive/v4-progressive-command-deck.html" target="_blank">v4.0 Progressive Command Deck</a>
           <span style="color: var(--text-muted); font-size: 10px;">HTML</span>
         </li>
@@ -805,17 +859,17 @@
     const bootScramble = document.getElementById('boot-scramble-text');
 
     function runBootSequence() {
-      if (sessionStorage.getItem('boot_executed_v5') === 'true') {
+      if (sessionStorage.getItem('boot_executed_v6') === 'true') {
         bootOverlay.classList.add('hidden');
         return;
       }
       setTimeout(() => { bootProgress.style.width = '100%'; }, 50);
 
       const phrases = [
-        "INITIALIZING COMMAND MATRIX v5.0...",
+        "INITIALIZING COMMAND MATRIX v6.0...",
         "AUTHENTICATING SOVEREIGN ACCESS...",
-        "MOUNTING CAPABILITY FILTERS & PROGRESSIVE TRAYS...",
-        "CALIBRATION COMPLETE // 419 ASSETS OPERATIONAL"
+        "MOUNTING ACCORDION FOCUS TRAYS...",
+        "CALIBRATION COMPLETE // 419 ASSETS MOUNTED"
       ];
       let p = 0;
       const interval = setInterval(() => {
@@ -828,14 +882,14 @@
       setTimeout(() => {
         clearInterval(interval);
         bootOverlay.classList.add('hidden');
-        sessionStorage.setItem('boot_executed_v5', 'true');
+        sessionStorage.setItem('boot_executed_v6', 'true');
       }, 2000);
     }
-    bootOverlay.addEventListener('click', () => { bootOverlay.classList.add('hidden'); sessionStorage.setItem('boot_executed_v5', 'true'); });
+    bootOverlay.addEventListener('click', () => { bootOverlay.classList.add('hidden'); sessionStorage.setItem('boot_executed_v6', 'true'); });
     window.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         bootOverlay.classList.add('hidden');
-        sessionStorage.setItem('boot_executed_v5', 'true');
+        sessionStorage.setItem('boot_executed_v6', 'true');
         closeDrawer();
         closeArchiveModal();
       }
@@ -843,63 +897,55 @@
     runBootSequence();
 
     // ----------------------------------------------------
-    // HIERARCHICAL SECTIONS DEFINITION
+    // HIERARCHICAL SECTIONS DEFINITION (ALL COLLAPSED BY DEFAULT)
     // ----------------------------------------------------
     const SECTION_HIERARCHY = [
       {
         id: 'core_builds',
         title: '🚀 JUSTIN HUBBARD CORE BUILDS (31)',
         desc: 'Proprietary sovereign agent harnesses, desktop studio environments, RAG engines, and tools.',
-        defaultOpen: true,
         filter: r => r.tags.includes('core_build')
       },
       {
         id: 'education_hub',
         title: '🎓 EDUCATION & LEARNING EXPERIENCES HUB',
         desc: 'Interactive study software, structured courses, mastermind labs, and video assignment pipelines.',
-        defaultOpen: true,
         filter: r => r.tags.includes('education') || ['Autodidact-AI-Learning-Studio', 'Interactive-Workbook-Pro', 'Codex-SimplifAI', 'mcp-course', 'outskill-ai-lab', 'RAG-System---Turning-YouTube-into-Assignments'].includes(r.name)
       },
       {
         id: 'agent_systems',
         title: '🤖 AGENT HARNESSES, HOSTS & EXTENSIBILITY',
         desc: 'Autonomous runtimes, desktop governance harnesses, A2UI protocols, Claude Code skills, and MCP servers.',
-        defaultOpen: true,
         filter: r => r.tags.includes('agent_harnesses') || r.tags.includes('agent_skills') || r.tags.includes('mcp')
       },
       {
         id: 'rag_memory',
         title: '🗄️ KNOWLEDGE GRAPHS, RAG & LOCAL VAULTS',
         desc: '3D GraphRAG, semantic vector pipelines, and data-sovereign OPFS/SQLite vaults.',
-        defaultOpen: false,
         filter: r => r.tags.includes('rag_pipelines') || r.tags.includes('rag_graphs') || r.tags.includes('local_vaults')
       },
       {
         id: 'inference_compute',
         title: '🧠 INFERENCE ENGINES, ACCELERATION & MODELS',
         desc: 'High-throughput local LLM serving, token optimization, and multimodal vision models.',
-        defaultOpen: false,
         filter: r => r.tags.includes('inf_engines') || r.tags.includes('inf_acceleration') || r.tags.includes('inf_multimodal')
       },
       {
         id: 'studios_ops',
         title: '🎨 DOMAIN STUDIOS, MARKETING OS & TERMINALS',
         desc: 'TARGHIT marketing OS, cybernetic terminals, infinite canvases, and mobile chat clients.',
-        defaultOpen: false,
         filter: r => r.tags.includes('studio_terminals') || r.tags.includes('studio_marketing') || r.tags.includes('studio_chat')
       },
       {
         id: 'eval_testing',
         title: '🧪 EVALUATION, BENCHMARKING & STRESS-TESTING',
         desc: 'Agent learning simulators, benchmark environments, and code merge stress testbeds.',
-        defaultOpen: false,
         filter: r => r.tags.includes('eval_simulators') || r.tags.includes('eval_stress')
       },
       {
         id: 'other_curated',
         title: '📦 CURATED FRAMEWORKS & UPSTREAM REPOSITORIES',
         desc: 'Curated developer tools, awesome-lists, web frameworks, and foundational libraries.',
-        defaultOpen: false,
         filter: r => true
       }
     ];
@@ -952,9 +998,6 @@
       `;
     }
 
-    // ----------------------------------------------------
-    // DUAL-ENGINE SEARCH & PROGRESSIVE TRAY RENDERER
-    // ----------------------------------------------------
     function matchSearch(r, tokens, queryLower) {
       if (!tokens.length) return 1.0;
       let score = 0.0;
@@ -996,7 +1039,10 @@
       return score;
     }
 
-    function renderUnifiedView() {
+    // ----------------------------------------------------
+    // ACCORDION / PROGRESSIVE TRAY RENDERER
+    // ----------------------------------------------------
+    function renderUnifiedView(preserveOpenId = null) {
       const startTime = performance.now();
       const container = document.getElementById('main-trays-container');
       const qLower = searchQuery.trim().toLowerCase();
@@ -1004,7 +1050,6 @@
 
       // Filter repos by active pills
       let activeFiltered = REPO_DATA.filter(r => {
-        // Capability
         if (currentCapability !== 'all') {
           if (currentCapability === 'core_build' && !r.tags.includes('core_build')) return false;
           if (currentCapability === 'education' && !r.tags.includes('education')) return false;
@@ -1016,37 +1061,33 @@
           if (currentCapability === 'eval_simulators' && !(r.tags.includes('eval_simulators') || r.tags.includes('eval_stress'))) return false;
         }
 
-        // Developer
         if (currentDev && !r.tags.includes(currentDev)) return false;
 
-        // Language
         if (currentLang !== 'all') {
           if (currentLang === 'HTML' && !['HTML', 'CSS', 'JavaScript'].includes(r.language)) return false;
           else if (r.language !== currentLang) return false;
         }
 
-        // Search score
         if (tokens.length > 0 && matchSearch(r, tokens, qLower) <= 0) return false;
 
         return true;
       });
 
-      // Update total matches count
       document.getElementById('matched-count').innerText = activeFiltered.length;
 
       if (activeFiltered.length === 0) {
         container.innerHTML = `
           <div style="padding: 60px 20px; text-align: center; border: 1px dashed var(--border-subtle); font-family: var(--font-mono); color: var(--text-muted); background: var(--bg-panel);">
-            [!] NO TELEMETRY MATCHES IDENTIFIED FOR CURRENT FILTER &amp; SEARCH QUERY: "${searchQuery}"<br>
+            [!] NO TELEMETRY MATCHES IDENTIFIED FOR QUERY: "${searchQuery}"<br>
             TRY ADJUSTING SEARCH TERMS OR RESETTING ACTIVE FILTERS.
           </div>
         `;
         const endTime = performance.now();
-        document.getElementById('search-latency').innerHTML = `ENGINE: HYBRID RRF • QUERY LATENCY: <strong>${(endTime - startTime).toFixed(2)}ms</strong>`;
+        document.getElementById('search-latency').innerHTML = `ENGINE: HYBRID RRF • LATENCY: <strong>${(endTime - startTime).toFixed(2)}ms</strong>`;
+        updateGlobalButtonState();
         return;
       }
 
-      // Group active filtered repos into Hierarchical Trays
       let html = '';
       let renderedRepoIds = new Set();
 
@@ -1061,7 +1102,6 @@
         if (secRepos.length > 0) {
           secRepos.forEach(r => renderedRepoIds.add(r.id));
 
-          // Sort within section: Core first, then score or alpha
           secRepos.sort((a, b) => {
             if (tokens.length > 0) {
               return matchSearch(b, tokens, qLower) - matchSearch(a, tokens, qLower);
@@ -1072,11 +1112,12 @@
             return a.name.localeCompare(b.name);
           });
 
-          const isOpen = sec.defaultOpen || tokens.length > 0 || currentCapability !== 'all';
+          // ALL COLLAPSED BY DEFAULT, unless explicitly opened
+          const isOpen = preserveOpenId === `sec-${sec.id}`;
 
           html += `
             <div class="tray-container ${isOpen ? 'open' : ''}" id="sec-${sec.id}">
-              <div class="tray-header" onclick="toggleSectionTray('sec-${sec.id}')">
+              <div class="tray-header" onclick="handleAccordionToggle('sec-${sec.id}')">
                 <div class="tray-title-group">
                   <span class="tray-toggle-icon">${isOpen ? '▼' : '▶'}</span>
                   <span class="tray-title">${sec.title}</span>
@@ -1096,20 +1137,85 @@
 
       container.innerHTML = html;
       const endTime = performance.now();
-      document.getElementById('search-latency').innerHTML = `ENGINE: HYBRID RRF • QUERY LATENCY: <strong>${(endTime - startTime).toFixed(2)}ms</strong>`;
+      document.getElementById('search-latency').innerHTML = `ENGINE: HYBRID RRF • LATENCY: <strong>${(endTime - startTime).toFixed(2)}ms</strong>`;
+      updateGlobalButtonState();
     }
 
-    window.toggleSectionTray = function(id) {
-      const el = document.getElementById(id);
-      if (el) {
-        el.classList.toggle('open');
-        const icon = el.querySelector('.tray-toggle-icon');
-        if (icon) icon.innerText = el.classList.contains('open') ? '▼' : '▶';
+    // ----------------------------------------------------
+    // ACCORDION MUTUAL EXCLUSION LOGIC (ONE OPEN AT A TIME)
+    // ----------------------------------------------------
+    window.handleAccordionToggle = function(clickedId) {
+      const clickedEl = document.getElementById(clickedId);
+      if (!clickedEl) return;
+
+      const isAlreadyOpen = clickedEl.classList.contains('open');
+
+      if (isAlreadyOpen) {
+        // Close it
+        clickedEl.classList.remove('open');
+        const icon = clickedEl.querySelector('.tray-toggle-icon');
+        if (icon) icon.innerText = '▶';
+      } else {
+        // Close all other trays first
+        document.querySelectorAll('.tray-container').forEach(el => {
+          el.classList.remove('open');
+          const icon = el.querySelector('.tray-toggle-icon');
+          if (icon) icon.innerText = '▶';
+        });
+
+        // Open only the clicked one
+        clickedEl.classList.add('open');
+        const icon = clickedEl.querySelector('.tray-toggle-icon');
+        if (icon) icon.innerText = '▼';
       }
+
+      updateGlobalButtonState();
     };
 
     // ----------------------------------------------------
-    // EVENT LISTENERS & FILTER WIRING
+    // GLOBAL EXPAND / COLLAPSE ALL BUTTON
+    // ----------------------------------------------------
+    window.toggleAllTraysGlobal = function() {
+      const allTrays = document.querySelectorAll('.tray-container');
+      const anyOpen = Array.from(allTrays).some(el => el.classList.contains('open'));
+
+      if (anyOpen) {
+        // Collapse all
+        allTrays.forEach(el => {
+          el.classList.remove('open');
+          const icon = el.querySelector('.tray-toggle-icon');
+          if (icon) icon.innerText = '▶';
+        });
+      } else {
+        // Expand all
+        allTrays.forEach(el => {
+          el.classList.add('open');
+          const icon = el.querySelector('.tray-toggle-icon');
+          if (icon) icon.innerText = '▼';
+        });
+      }
+      updateGlobalButtonState();
+    };
+
+    function updateGlobalButtonState() {
+      const allTrays = document.querySelectorAll('.tray-container');
+      const anyOpen = Array.from(allTrays).some(el => el.classList.contains('open'));
+      const btnIcon = document.getElementById('global-btn-icon');
+      const btnText = document.getElementById('global-btn-text');
+      
+      if (!btnIcon || !btnText) return;
+
+      if (anyOpen) {
+        btnIcon.innerText = '[-]';
+        btnText.innerText = 'COLLAPSE ALL TRAYS';
+      } else {
+        btnIcon.innerText = '[+]';
+        btnText.innerText = 'EXPAND ALL TRAYS';
+      }
+    }
+
+    // ----------------------------------------------------
+    // SEARCH & FILTER WIRING
     // ----------------------------------------------------
     const searchBox = document.getElementById('search-box');
     const clearBtn = document.getElementById('search-clear-btn');
@@ -1128,13 +1234,23 @@
       renderUnifiedView();
     });
 
-    // Capability Pills
+    // Capability Pills (Clicking a pill filters & opens that matching tray in focus!)
     document.querySelectorAll('#capability-pills .tax-pill').forEach(pill => {
       pill.addEventListener('click', () => {
         document.querySelectorAll('#capability-pills .tax-pill').forEach(p => p.classList.remove('active'));
         pill.classList.add('active');
         currentCapability = pill.getAttribute('data-filter');
-        renderUnifiedView();
+
+        let targetTrayId = null;
+        if (currentCapability === 'core_build') targetTrayId = 'sec-core_builds';
+        else if (currentCapability === 'education') targetTrayId = 'sec-education_hub';
+        else if (currentCapability === 'agent_harnesses' || currentCapability === 'agent_skills') targetTrayId = 'sec-agent_systems';
+        else if (currentCapability === 'inf_engines') targetTrayId = 'sec-inference_compute';
+        else if (currentCapability === 'rag_pipelines') targetTrayId = 'sec-rag_memory';
+        else if (currentCapability === 'studio_terminals') targetTrayId = 'sec-studios_ops';
+        else if (currentCapability === 'eval_simulators') targetTrayId = 'sec-eval_testing';
+
+        renderUnifiedView(targetTrayId);
       });
     });
 
@@ -1180,7 +1296,7 @@
       document.querySelectorAll('#language-pills .tax-pill').forEach(p => p.classList.remove('active'));
       document.querySelector('#language-pills [data-lang="all"]').classList.add('active');
 
-      renderUnifiedView();
+      renderUnifiedView(); // Resets with all collapsed
     });
 
     // 1-Click Copy Clone
@@ -1236,7 +1352,7 @@
       if (e.target.id === 'archive-modal') closeArchiveModal();
     });
 
-    // Initial render
+    // Initial render (ALL COLLAPSED BY DEFAULT)
     renderUnifiedView();
   </script>
 </body>
