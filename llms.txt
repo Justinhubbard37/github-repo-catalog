@@ -1,9 +1,9 @@
 # Justin Hubbard Sovereign AI Repository Catalog
 > Curated Account Index & Architecture Portfolio for [@Justinhubbard37](https://github.com/Justinhubbard37)
-> Total Repositories: 419 | Core Proprietary Builds: 31 | Public: 398 | Private: 21
+> Total Repositories: 420 | Core Proprietary Builds: 32 | Public: 399 | Private: 21
 > Policy: Policy A (Complete Metadata Indexing; Source Code Access-Controlled)
 
-## Core Proprietary Projects (All 31 Builds)
+## Core Proprietary Projects (All 32 Builds)
 - [a-team-studio](https://github.com/Justinhubbard37/a-team-studio): Local-first Tauri v2 desktop studio prototype with React/TypeScript frontend and Rust/SQLite persistence boundary. (Lang: TypeScript)
 - [AlchemyArchitect](https://github.com/Justinhubbard37/AlchemyArchitect) [Private 🔒]: AlchemyArchitect AI Studio application build (Lang: Docs / Config)
 - [Autodidact-AI-Learning-Studio](https://github.com/Justinhubbard37/Autodidact-AI-Learning-Studio) [Private 🔒]: This app is an AI-powered learning studio for serious self-learners that turns questions, notes, and uploaded material into structured explanations, quizzes, and adaptive study sessions. (Lang: Docs / Config)
@@ -23,6 +23,7 @@
 - [NBA-basketball-statistics](https://github.com/Justinhubbard37/NBA-basketball-statistics): Data tracking, metrics aggregation, and analytics toolkit for NBA basketball games. (Lang: Docs / Config)
 - [nextjs-ai-chatbot](https://github.com/Justinhubbard37/nextjs-ai-chatbot) [Private 🔒]: Full-stack AI chatbot SDK template built with Next.js 14 App Router and Vercel AI SDK. (Lang: TypeScript)
 - [OnTheLLow-Idea-Discovery-System](https://github.com/Justinhubbard37/OnTheLLow-Idea-Discovery-System) [Private 🔒]: Autonomous idea discovery and concept extraction workflow built with Claude Code. (Lang: Docs / Config)
+- [onthellow-landing-agentarena](https://github.com/Justinhubbard37/onthellow-landing-agentarena): OnTheLLow landing page — Architectural Precision / Kinetic Threshold (Lang: HTML)
 - [Projects-for-Code-Merge-App-Stress-Testing](https://github.com/Justinhubbard37/Projects-for-Code-Merge-App-Stress-Testing): Compiled testbed suite of multi-framework codebases for merge engine stress-testing. (Lang: HTML)
 - [RAG-System---Turning-YouTube-into-Assignments](https://github.com/Justinhubbard37/RAG-System---Turning-YouTube-into-Assignments) [Private 🔒]: Atlas — AI-powered content analysis platform combining YouTube transcription, academic research, and assignment generation. (Lang: Python)
 - [Replit](https://github.com/Justinhubbard37/Replit) [Private 🔒]: Cloud development configurations and interactive workspace templates. (Lang: Docs / Config)
@@ -45,6 +46,6 @@
 - [Evaluation & Testing](README.md#eval-simulators): Agent environment simulators and code merge stress testbeds.
 
 ## Reference Documentation
-- [Operational Field Manual](PORTFOLIO_GUIDE.md): Human-oriented architecture manual & complete 31-build cheat-sheet.
+- [Operational Field Manual](PORTFOLIO_GUIDE.md): Human-oriented architecture manual & complete 32-build cheat-sheet.
 - [AI Agent Instructions](AGENTS.md): Machine-readable execution guide & task-to-repo routing rules.
-- [Canonical Machine Manifest](catalog-manifest.json): Full self-describing JSON schema of all 419 repositories.
+- [Canonical Machine Manifest](catalog-manifest.json): Full self-describing JSON schema of all 420 repositories.

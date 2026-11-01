@@ -2,9 +2,41 @@
 
 > **Target Workspace:** `[@Justinhubbard37](https://github.com/Justinhubbard37)` AI Repository Vault  
 > **Audience:** Autonomous AI Agents (Claude Code, Codex CLI, Cursor, Windsurf, A2UI Agents, LangGraph Swarms)  
-> **Canonical Manifest:** `catalog-manifest.json` (419 Repositories) • `llms.txt` (Compact Standard)  
+> **Canonical Manifest:** `catalog-manifest.json` (420 Repositories) • `llms.txt` (Compact Standard)  
 > **Catalog Version:** `v7.0.0` • **Schema Version:** `1.1.0`  
 > **Governance Policy:** Policy A (Intentional Metadata Indexing; Source Code Protected)  
+
+---
+
+## 📖 0. Read Order (Start Here)
+
+Read in this order and stop as soon as the task is answered. Do not read past
+what you need — later entries are progressively more expensive.
+
+1. **`llms.txt`** — ~8 KB. Core builds, capability categories, and where each
+   reference document lives. Answers "what exists" for most questions.
+2. **`AGENTS.md`** (this file) — ~14 KB. Routing rules, query snippets, and the
+   full core-build enumeration. Answers "which repository handles this".
+3. **`catalog-manifest.json`** — canonical data for every repository. Query it
+   programmatically with the snippets in section 3; do not read it whole. Its
+   shape is defined and enforced by **`catalog.schema.json`**.
+4. **`DIRECTORY.md`** — human-readable full directory. Derived, not canonical.
+   Prefer the manifest.
+5. **`README.md`** and **`index.html`** — human presentation surfaces. Large.
+   Do not load into context; they contain nothing the manifest does not.
+
+**Authority order:** `catalog-manifest.json` is the single source of truth.
+Every other file is derived from it. If any two disagree, the manifest wins and
+the other file is stale — report the discrepancy rather than reconciling silently.
+
+**Before reporting any catalog change as complete**, run:
+
+```bash
+python3 sync-catalog.py --check
+```
+
+It exits `0` only when the manifest is internally consistent and every derived
+surface agrees with it. It requires no network access and writes nothing.
 
 ---
 
@@ -14,7 +46,7 @@ You are an expert autonomous AI software engineer, architect, and assistant oper
 
 Your objective is to:
 1. **Accurately identify and route tasks** to existing codebases in this account without reinventing the wheel or hallucinating repositories.
-2. **Reuse proven architectural patterns** from Justin's 31 proprietary core builds (e.g., Tauri v2 desktop harnesses, SQLite persistence boundaries, GraphRAG, OPFS vaults, and marketing OS pipelines).
+2. **Reuse proven architectural patterns** from Justin's 32 proprietary core builds (e.g., Tauri v2 desktop harnesses, SQLite persistence boundaries, GraphRAG, OPFS vaults, and marketing OS pipelines).
 3. **Programmatically query and extract** repository metadata using `catalog-manifest.json` across all routing fields.
 
 ---
@@ -26,11 +58,11 @@ When assigned a task or asked to reference an architectural component, consult t
 | If the User Requests... | Primary Target Repository | Secondary / Upstream Reference | Key Concept / Stack |
 | :--- | :--- | :--- | :--- |
 | **Desktop Agent Harness / Host** | `code-name` / `code-name-2-claude-desktop-codex-continuation` | `HarneSSHost`, `the-ai-underground-project` | Tauri v2, two-pane governed workspace, localhost LLM routing. |
-| **Local-First SQLite Persistence** | `a-team-studio` | `SimplifAI`, `code-name-2` | Rust/SQLite command boundary, mock persistence, OPFS. |
+| **Local-First SQLite Persistence** | `a-team-studio` | `SimplifAI`, `code-name-2-claude-desktop-codex-continuation` | Rust/SQLite command boundary, mock persistence, OPFS. |
 | **GraphRAG & Knowledge Graphs** | `code-name` | `Supabase` | 3D GraphRAG, entity-relationship extraction, local vector search. |
 | **Video-to-Assignment RAG** | `RAG-System---Turning-YouTube-into-Assignments` (Atlas) | `MacroMaster` | Multimodal YouTube transcription, paper research, assignment generator. |
 | **Adaptive Study & Quiz App** | `Autodidact-AI-Learning-Studio` | `Interactive-Workbook-Pro` | Dynamic quiz generation, concept explanation, adaptive study sessions. |
-| **Inference Acceleration / Latency** | `FreeToken` | `vllm`, `llama.cpp` | High-throughput token processing, model optimization. |
+| **Inference Acceleration / Latency** | `FreeToken` | `llama.cpp`, `llamacpp-rocm` | High-throughput token processing, model optimization. |
 | **Multimodal Vision Embeddings** | `Qwen3-VL-Embedding` | `Supabase` | Vision-language embeddings, multimodal rerankers. |
 | **Claude Code Skills & Web Builders** | `astro-builder-skill` | `social-media-skills`, `OnTheLLow-Idea-Discovery-System` | Modular Claude skills, Codex CLI tooling, design system integration. |
 | **Model Context Protocol (MCP)** | `mcp-course` | `adk-kotlin` | MCP servers, client tools, protocol integration. |
@@ -45,12 +77,20 @@ When assigned a task or asked to reference an architectural component, consult t
 
 AI agents should query `catalog-manifest.json` across **all routing fields** (name, description, tags, and topics) using these deterministic one-liners:
 
+
+> **Note on `topics`:** every repository in this account currently has an empty
+> `topics` array, because no GitHub topics are set on the repositories themselves.
+> The full-field query below therefore searches **name + description + tags** in
+> practice. `topics` is fetched live on every sync and will start contributing
+> the moment topics are added on GitHub. `tags` is the curated taxonomy and is
+> the reliable categorical signal today.
+
 ### Full-Field Multi-Signal Search (Name + Description + Tags + Topics):
 ```bash
 python3 -c "import json; m=json.load(open('catalog-manifest.json')); q='sqlite'; print([{'name': r['name'], 'desc': r['description'], 'tags': r['tags'], 'lang': r['language'], 'priv': r['is_private']} for r in m['repositories'] if q in (r['name']+' '+r['description']+' '+' '.join(r.get('topics',[]))+' '+' '.join(r.get('tags',[]))).lower()])"
 ```
 
-### Enumerate All 31 Core Proprietary Builds:
+### Enumerate All 32 Core Proprietary Builds:
 ```bash
 python3 -c "import json; m=json.load(open('catalog-manifest.json')); print([r['name'] for r in m['repositories'] if 'core_build' in r.get('tags', [])])"
 ```
@@ -62,7 +102,7 @@ python3 -c "import json; m=json.load(open('catalog-manifest.json')); print([{'na
 
 ---
 
-## 🏗️ 4. Complete Catalog of All 31 Core Proprietary Builds
+## 🏗️ 4. Complete Catalog of All 32 Core Proprietary Builds
 
 | # | Repository | Stack | Visibility | Role & Key Mechanisms |
 | :-: | :--- | :---: | :---: | :--- |
@@ -85,26 +125,27 @@ python3 -c "import json; m=json.load(open('catalog-manifest.json')); print([{'na
 | 17 | [`NBA-basketball-statistics`](https://github.com/Justinhubbard37/NBA-basketball-statistics) | `Docs / Config` | `Public` | Data tracking, metrics aggregation, and analytics toolkit for NBA basketball games. |
 | 18 | [`nextjs-ai-chatbot`](https://github.com/Justinhubbard37/nextjs-ai-chatbot) | `TypeScript` | `Private 🔒` | Full-stack AI chatbot SDK template built with Next.js 14 App Router and Vercel AI SDK. |
 | 19 | [`OnTheLLow-Idea-Discovery-System`](https://github.com/Justinhubbard37/OnTheLLow-Idea-Discovery-System) | `Docs / Config` | `Private 🔒` | Autonomous idea discovery and concept extraction workflow built with Claude Code. |
-| 20 | [`Projects-for-Code-Merge-App-Stress-Testing`](https://github.com/Justinhubbard37/Projects-for-Code-Merge-App-Stress-Testing) | `HTML` | `Public` | Compiled testbed suite of multi-framework codebases for merge engine stress-testing. |
-| 21 | [`RAG-System---Turning-YouTube-into-Assignments`](https://github.com/Justinhubbard37/RAG-System---Turning-YouTube-into-Assignments) | `Python` | `Private 🔒` | Atlas — AI-powered content analysis platform combining YouTube transcription, academic research, and assignment generation. |
-| 22 | [`Replit`](https://github.com/Justinhubbard37/Replit) | `Docs / Config` | `Private 🔒` | Cloud development configurations and interactive workspace templates. |
-| 23 | [`ScratchPad`](https://github.com/Justinhubbard37/ScratchPad) | `HTML` | `Public` | Local-first, infinite-canvas sticky note desktop application with BYOK AI built with Tauri v2. |
-| 24 | [`SimplifAI`](https://github.com/Justinhubbard37/SimplifAI) | `Docs / Config` | `Private 🔒` | Local-first web application with Origin Private File System (OPFS) and BYOK AI integration. |
-| 25 | [`Supabase`](https://github.com/Justinhubbard37/Supabase) | `Docs / Config` | `Public` | Data storage, vector embeddings, and backend integration bridge with Mistral AI. |
-| 26 | [`TARGHIT`](https://github.com/Justinhubbard37/TARGHIT) | `Docs / Config` | `Private 🔒` | MARKETING_OS — Comprehensive strategic marketing and brand execution operating system. |
-| 27 | [`TARGHIT-TerminalTreason`](https://github.com/Justinhubbard37/TARGHIT-TerminalTreason) | `Docs / Config` | `Private 🔒` | Enterprise hygiene archives and deployment assets for TARGHIT and TerminalTreason. |
-| 28 | [`TerminalTreason`](https://github.com/Justinhubbard37/TerminalTreason) | `TypeScript` | `Private 🔒` | Enterprise-grade cybernetic terminal UI and agent workspace built with React and Tailwind. |
-| 29 | [`TerminalTreason-Brand-Width_Merge`](https://github.com/Justinhubbard37/TerminalTreason-Brand-Width_Merge) | `TypeScript` | `Private 🔒` | Enterprise-grade terminal UI and agent workspace merge branch. |
-| 30 | [`the-ai-underground-project`](https://github.com/Justinhubbard37/the-ai-underground-project) | `Rust` | `Private 🔒` | Local-first desktop AI workbench and terminal harness built with Tauri and React. |
-| 31 | [`The-Local-Layer`](https://github.com/Justinhubbard37/The-Local-Layer) | `Docs / Config` | `Private 🔒` | Local-first orchestration layer and data-sovereign runtime for local LLMs and tools. |
+| 20 | [`onthellow-landing-agentarena`](https://github.com/Justinhubbard37/onthellow-landing-agentarena) | `HTML` | `Public` | OnTheLLow landing page — Architectural Precision / Kinetic Threshold |
+| 21 | [`Projects-for-Code-Merge-App-Stress-Testing`](https://github.com/Justinhubbard37/Projects-for-Code-Merge-App-Stress-Testing) | `HTML` | `Public` | Compiled testbed suite of multi-framework codebases for merge engine stress-testing. |
+| 22 | [`RAG-System---Turning-YouTube-into-Assignments`](https://github.com/Justinhubbard37/RAG-System---Turning-YouTube-into-Assignments) | `Python` | `Private 🔒` | Atlas — AI-powered content analysis platform combining YouTube transcription, academic research, and assignment generation. |
+| 23 | [`Replit`](https://github.com/Justinhubbard37/Replit) | `Docs / Config` | `Private 🔒` | Cloud development configurations and interactive workspace templates. |
+| 24 | [`ScratchPad`](https://github.com/Justinhubbard37/ScratchPad) | `HTML` | `Public` | Local-first, infinite-canvas sticky note desktop application with BYOK AI built with Tauri v2. |
+| 25 | [`SimplifAI`](https://github.com/Justinhubbard37/SimplifAI) | `Docs / Config` | `Private 🔒` | Local-first web application with Origin Private File System (OPFS) and BYOK AI integration. |
+| 26 | [`Supabase`](https://github.com/Justinhubbard37/Supabase) | `Docs / Config` | `Public` | Data storage, vector embeddings, and backend integration bridge with Mistral AI. |
+| 27 | [`TARGHIT`](https://github.com/Justinhubbard37/TARGHIT) | `Docs / Config` | `Private 🔒` | MARKETING_OS — Comprehensive strategic marketing and brand execution operating system. |
+| 28 | [`TARGHIT-TerminalTreason`](https://github.com/Justinhubbard37/TARGHIT-TerminalTreason) | `Docs / Config` | `Private 🔒` | Enterprise hygiene archives and deployment assets for TARGHIT and TerminalTreason. |
+| 29 | [`TerminalTreason`](https://github.com/Justinhubbard37/TerminalTreason) | `TypeScript` | `Private 🔒` | Enterprise-grade cybernetic terminal UI and agent workspace built with React and Tailwind. |
+| 30 | [`TerminalTreason-Brand-Width_Merge`](https://github.com/Justinhubbard37/TerminalTreason-Brand-Width_Merge) | `TypeScript` | `Private 🔒` | Enterprise-grade terminal UI and agent workspace merge branch. |
+| 31 | [`the-ai-underground-project`](https://github.com/Justinhubbard37/the-ai-underground-project) | `Rust` | `Private 🔒` | Local-first desktop AI workbench and terminal harness built with Tauri and React. |
+| 32 | [`The-Local-Layer`](https://github.com/Justinhubbard37/The-Local-Layer) | `Docs / Config` | `Private 🔒` | Local-first orchestration layer and data-sovereign runtime for local LLMs and tools. |
 
 ---
 
 ## 🔒 5. Information Governance & Policy A Compliance
 
 1. **Policy A Compliance:** High-level metadata of private projects is intentionally indexed for complete command portfolio discovery. The source code remains private on GitHub.
-2. **Deterministic Validation:** The manifest is the authoritative source of truth. Any synchronization must run `validate_catalog()` before reporting success.
-3. **Preservation:** Always archive previous milestone artifacts in `/archive/` before modifying production catalogs.
+2. **Deterministic Validation:** The manifest is the authoritative source of truth. `validate_catalog()` lives in `sync-catalog.py`. Run `python3 sync-catalog.py --check` to verify the catalog without network access or writes; it exits non-zero and prints every failing check. Never report a sync as successful without a passing run.
+3. **Preservation:** Version history lives in git tags (`v1.0.0` … `v7.1.0`), not in a duplicated `/archive/` directory. To read a previous catalog version use `git show <tag>:<path>`. Do not reintroduce full-copy archive files — they create competing non-authoritative copies of the same records.
 
 ---
 <sub>*AGENTS.md v7.0.0 • Maintained for Autonomous Agent Systems • Account: @Justinhubbard37*</sub>

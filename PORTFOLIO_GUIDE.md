@@ -3,14 +3,14 @@
 > **Target Account:** `[@Justinhubbard37](https://github.com/Justinhubbard37)`  
 > **Classification:** Sovereign AI Artifact Directory & Repository Vault  
 > **Catalog Version:** `v7.0.0` • **Maintained By:** Justin Hubbard  
-> **Total Indexed Repositories:** **419** (398 Public, 21 Private 🔒)  
+> **Total Indexed Repositories:** **420** (399 Public, 21 Private 🔒)  
 > **Live Tactical Web App:** [https://justinhubbard37.github.io/github-repo-catalog](https://justinhubbard37.github.io/github-repo-catalog)
 
 ---
 
 ## 🧭 Section 1: Executive Overview & Multi-Interface Navigation
 
-Managing **419 repositories** requires immediate clarity without cognitive fatigue. This ecosystem provides **three complementary interfaces**:
+Managing **420 repositories** requires immediate clarity without cognitive fatigue. This ecosystem provides **three complementary interfaces**:
 
 0. **The Autonomous Agent Protocol (`AGENTS.md` & `llms.txt`):**
    * *Best for:* Autonomous AI agents (Claude Code, Codex CLI, Cursor) to navigate and query the repository programmatically with zero hallucination.
@@ -24,15 +24,15 @@ Managing **419 repositories** requires immediate clarity without cognitive fatig
 ## 🔒 Section 2: Information Governance & Publication Policy (Policy A)
 
 This repository operates under **Policy A (Unified Portfolio Directory with Intentional Metadata Disclosure)**:
-* **Intentional Discovery:** High-level project metadata (repository names, synthesized descriptions, capability tags, and primary languages) for all **419 repositories** (including the 21 private workspaces) is intentionally indexed to provide a 100% complete command center.
+* **Intentional Discovery:** High-level project metadata (repository names, synthesized descriptions, capability tags, and primary languages) for all **420 repositories** (including the 21 private workspaces) is intentionally indexed to provide a 100% complete command center.
 * **Source Code Access Control:** The underlying source code, assets, and branches for private repositories remain strictly access-controlled and encrypted on GitHub.
 * **Audit Integrity:** Automated verification tools and security scanners can verify that metadata exposure is an intentional architectural decision, not an accidental data leak.
 
 ---
 
-## 🚀 Section 3: The Complete 31 Core Proprietary Builds (Flagship Cheat-Sheet)
+## 🚀 Section 3: The Complete 32 Core Proprietary Builds (Flagship Cheat-Sheet)
 
-All **31 original source projects** created by Justin Hubbard are cataloged below:
+All **32 original source projects** created by Justin Hubbard are cataloged below:
 
 | # | Project | Stack | Visibility | Core Architectural Role & Purpose |
 | :-: | :--- | :---: | :---: | :--- |
@@ -55,18 +55,19 @@ All **31 original source projects** created by Justin Hubbard are cataloged belo
 | 17 | **`NBA-basketball-statistics`** | `Docs / Config` | `Public` | Data tracking, metrics aggregation, and analytics toolkit for NBA basketball games. |
 | 18 | **`nextjs-ai-chatbot`** | `TypeScript` | `Private 🔒` | Full-stack AI chatbot SDK template built with Next.js 14 App Router and Vercel AI SDK. |
 | 19 | **`OnTheLLow-Idea-Discovery-System`** | `Docs / Config` | `Private 🔒` | Autonomous idea discovery and concept extraction workflow built with Claude Code. |
-| 20 | **`Projects-for-Code-Merge-App-Stress-Testing`** | `HTML` | `Public` | Compiled testbed suite of multi-framework codebases for merge engine stress-testing. |
-| 21 | **`RAG-System---Turning-YouTube-into-Assignments`** | `Python` | `Private 🔒` | Atlas — AI-powered content analysis platform combining YouTube transcription, academic research, and assignment generation. |
-| 22 | **`Replit`** | `Docs / Config` | `Private 🔒` | Cloud development configurations and interactive workspace templates. |
-| 23 | **`ScratchPad`** | `HTML` | `Public` | Local-first, infinite-canvas sticky note desktop application with BYOK AI built with Tauri v2. |
-| 24 | **`SimplifAI`** | `Docs / Config` | `Private 🔒` | Local-first web application with Origin Private File System (OPFS) and BYOK AI integration. |
-| 25 | **`Supabase`** | `Docs / Config` | `Public` | Data storage, vector embeddings, and backend integration bridge with Mistral AI. |
-| 26 | **`TARGHIT`** | `Docs / Config` | `Private 🔒` | MARKETING_OS — Comprehensive strategic marketing and brand execution operating system. |
-| 27 | **`TARGHIT-TerminalTreason`** | `Docs / Config` | `Private 🔒` | Enterprise hygiene archives and deployment assets for TARGHIT and TerminalTreason. |
-| 28 | **`TerminalTreason`** | `TypeScript` | `Private 🔒` | Enterprise-grade cybernetic terminal UI and agent workspace built with React and Tailwind. |
-| 29 | **`TerminalTreason-Brand-Width_Merge`** | `TypeScript` | `Private 🔒` | Enterprise-grade terminal UI and agent workspace merge branch. |
-| 30 | **`the-ai-underground-project`** | `Rust` | `Private 🔒` | Local-first desktop AI workbench and terminal harness built with Tauri and React. |
-| 31 | **`The-Local-Layer`** | `Docs / Config` | `Private 🔒` | Local-first orchestration layer and data-sovereign runtime for local LLMs and tools. |
+| 20 | **`onthellow-landing-agentarena`** | `HTML` | `Public` | OnTheLLow landing page — Architectural Precision / Kinetic Threshold |
+| 21 | **`Projects-for-Code-Merge-App-Stress-Testing`** | `HTML` | `Public` | Compiled testbed suite of multi-framework codebases for merge engine stress-testing. |
+| 22 | **`RAG-System---Turning-YouTube-into-Assignments`** | `Python` | `Private 🔒` | Atlas — AI-powered content analysis platform combining YouTube transcription, academic research, and assignment generation. |
+| 23 | **`Replit`** | `Docs / Config` | `Private 🔒` | Cloud development configurations and interactive workspace templates. |
+| 24 | **`ScratchPad`** | `HTML` | `Public` | Local-first, infinite-canvas sticky note desktop application with BYOK AI built with Tauri v2. |
+| 25 | **`SimplifAI`** | `Docs / Config` | `Private 🔒` | Local-first web application with Origin Private File System (OPFS) and BYOK AI integration. |
+| 26 | **`Supabase`** | `Docs / Config` | `Public` | Data storage, vector embeddings, and backend integration bridge with Mistral AI. |
+| 27 | **`TARGHIT`** | `Docs / Config` | `Private 🔒` | MARKETING_OS — Comprehensive strategic marketing and brand execution operating system. |
+| 28 | **`TARGHIT-TerminalTreason`** | `Docs / Config` | `Private 🔒` | Enterprise hygiene archives and deployment assets for TARGHIT and TerminalTreason. |
+| 29 | **`TerminalTreason`** | `TypeScript` | `Private 🔒` | Enterprise-grade cybernetic terminal UI and agent workspace built with React and Tailwind. |
+| 30 | **`TerminalTreason-Brand-Width_Merge`** | `TypeScript` | `Private 🔒` | Enterprise-grade terminal UI and agent workspace merge branch. |
+| 31 | **`the-ai-underground-project`** | `Rust` | `Private 🔒` | Local-first desktop AI workbench and terminal harness built with Tauri and React. |
+| 32 | **`The-Local-Layer`** | `Docs / Config` | `Private 🔒` | Local-first orchestration layer and data-sovereign runtime for local LLMs and tools. |
 
 ---
 

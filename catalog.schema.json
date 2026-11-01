@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Justinhubbard37/github-repo-catalog/blob/main/catalog.schema.json",
+  "title": "Justinhubbard37 Repository Catalog Manifest",
+  "description": "Canonical machine-readable manifest of every repository in the @Justinhubbard37 account. Generated and validated by sync-catalog.py. This file is the authoritative source of truth for agents; README.md and index.html are human presentations derived from the same data.",
+  "type": "object",
+  "required": ["$schema", "catalog_metadata", "repositories"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Relative path to this schema file."
+    },
+    "catalog_metadata": {
+      "type": "object",
+      "required": [
+        "schema_version", "catalog_version", "generated_at", "last_sync_timestamp",
+        "account", "total_repositories", "source_repositories_count",
+        "fork_repositories_count", "public_repositories_count",
+        "private_repositories_count", "information_governance_policy"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+        "catalog_version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+        "generated_at": { "type": "string", "format": "date-time" },
+        "last_sync_timestamp": { "type": "string", "format": "date-time" },
+        "account": { "type": "string" },
+        "total_repositories": { "type": "integer", "minimum": 0 },
+        "source_repositories_count": { "type": "integer", "minimum": 0 },
+        "fork_repositories_count": { "type": "integer", "minimum": 0 },
+        "public_repositories_count": { "type": "integer", "minimum": 0 },
+        "private_repositories_count": { "type": "integer", "minimum": 0 },
+        "information_governance_policy": { "type": "string" }
+      }
+    },
+    "repositories": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/repository" }
+    }
+  },
+  "$defs": {
+    "repository": {
+      "type": "object",
+      "required": [
+        "id", "name", "full_name", "html_url", "clone_url", "description",
+        "language", "topics", "is_fork", "is_private", "is_archived",
+        "default_branch", "stars", "forks", "created_at", "updated_at",
+        "pushed_at", "last_sync_date", "upstream", "tags"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "integer", "description": "GitHub numeric repository id. Stable across renames." },
+        "name": { "type": "string", "minLength": 1 },
+        "full_name": { "type": "string", "pattern": "^[^/]+/[^/]+$" },
+        "html_url": { "type": "string", "format": "uri" },
+        "clone_url": { "type": "string", "format": "uri" },
+        "description": { "type": "string", "description": "Repository description. Empty string when GitHub has none; never null." },
+        "language": { "type": "string", "description": "Primary language, or 'Docs / Config' when GitHub reports none." },
+        "topics": { "type": "array", "items": { "type": "string" }, "description": "GitHub repository topics as set on the repo itself." },
+        "is_fork": { "type": "boolean" },
+        "is_private": { "type": "boolean" },
+        "is_archived": { "type": "boolean" },
+        "default_branch": { "type": "string", "minLength": 1 },
+        "stars": { "type": "integer", "minimum": 0 },
+        "forks": { "type": "integer", "minimum": 0 },
+        "created_at": { "type": "string", "format": "date-time", "description": "Full ISO-8601 UTC. Real GitHub creation time." },
+        "updated_at": { "type": "string", "format": "date-time", "description": "Full ISO-8601 UTC." },
+        "pushed_at": { "type": "string", "format": "date-time", "description": "Full ISO-8601 UTC. Same format as created_at and updated_at." },
+        "last_sync_date": { "type": "string", "format": "date", "description": "YYYY-MM-DD date this record was last refreshed." },
+        "upstream": {
+          "description": "Parent repository for forks; null for original work.",
+          "oneOf": [
+            { "type": "null" },
+            {
+              "type": "object",
+              "required": ["full_name", "html_url"],
+              "additionalProperties": false,
+              "properties": {
+                "full_name": { "type": "string", "pattern": "^[^/]+/[^/]+$" },
+                "html_url": { "type": "string", "format": "uri" }
+              }
+            }
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/tag" },
+          "description": "Curated taxonomy. Exactly one of core_build or curated_fork is always present."
+        }
+      }
+    },
+    "tag": {
+      "type": "string",
+      "enum": [
+        "core_build", "curated_fork", "org_justin",
+        "education", "ed_studios", "ed_courses", "ed_engines", "ed_guides",
+        "agent_harnesses", "agent_skills", "mcp",
+        "rag_graphs", "rag_pipelines", "local_vaults",
+        "inf_engines", "inf_acceleration", "inf_multimodal",
+        "studio_marketing", "studio_terminals", "studio_chat",
+        "eval_simulators", "eval_stress",
+        "org_google", "org_openai_anthropic", "org_meta_msft", "org_frontier"
+      ]
+    }
+  }
+}
